@@ -1,14 +1,21 @@
 {
-  "name": "solana-backend",
+  "name": "phantom-demo",
   "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
-  "dependencies": {
-    "express": "^4.18.2",
-    "node-fetch": "^3.3.2",
-    "cors": "^2.8.5"
-  },
+  "private": true,
+  "homepage": "https://<SEU_USUARIO_GITHUB>.github.io/phantom-demo",
   "scripts": {
-    "start": "node server.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.78.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
