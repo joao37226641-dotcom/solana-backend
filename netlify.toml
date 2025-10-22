@@ -1,0 +1,6 @@
+[build]
+  publish = "."          # ou "public" se tiver site React
+  functions = "functions"
+
+[functions]
+  node_bundler = "esbuild"
